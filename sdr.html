@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('court_2.jpg');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+
+                
+            }
+            .center{
+                border: 2px solid #fff;
+                background-color:lavenderblush;
+                width: 30%;
+                text-align: center;
+                border-radius: 20px;
+               
+            }
+            
+            .center h1 {
+                font-size: 36px;
+                text-align: center;
+                color:gray;
+            
+
+            }
+            .center .input-box{
+              
+                width: 80%;
+                height: 40px;
+                margin: 10px;
+            }
+            .center .ehj{
+                border-radius: 30px;
+                width: 80px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+    
+      <div class="center">
+          
+          <form action=" http://localhost/project/rds.php", method="POST">
+
+              <h1>LOGIN TO BOOK</h1> <br>
+              
+               <input class="input-box" type="text" id="rbb" name="rbb" placeholder="username" required><br>
+               <input class="input-box" type="text" id="rcc" name="rcc" placeholder="password" required><br>
+               <input style="background-color: gray;" class="ehj" type="submit" value="login" ><br>
+               
+                
+            </form>
+            <a href="http://localhost/project/rgj.html"><button style="background-color: red;" class="ehj">register</button></a>
+    
+        </div>
+        
+
+    
+    </body>
+    
+        
+    
+</html>

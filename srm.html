@@ -1,0 +1,106 @@
+     <html>
+        <head>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    background-image: url("bg_image.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            
+                form {
+                    background-color: #fff;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    margin: 20px;
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                form:hover {
+                    transform: scale(1.02);
+                }
+            
+                label {
+                    font-weight: bold;
+                    color: #333;
+                    display: block;
+                    margin-bottom: 8px;
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                input {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                }
+            
+                input:focus {
+                    border-color: #4caf50;
+                    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+                }
+            
+                input:focus + label {
+                    transform: translateY(-15px);
+                    color: #4caf50;
+                }
+            
+                input[type="submit"] {
+                    background-color: #4caf50;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease-in-out;
+                }
+            
+                input[type="submit"]:hover {
+                    background-color:#4caf50;
+                }
+            </style>
+                        
+    
+        </head>
+        <body>
+    
+            <form class="div1" action=" http://localhost/project/rsv.php", method="POST">
+                    <label>schedule appointment</label>
+                    <label>your id</label>
+                    <input type="text" id="rws" name="rws" required><br>
+                    <label> date</label> <br>
+                     <input type="date" id="fgh" name="fgh" required><br>
+                      <label>start time</label> <br>
+                      <input type="time" id="cde" name="cde"  required><br>
+                      <label>end time</label> <br>
+                      <input type="time" id="vmp" name="vmp" required><br>
+                       <input type="submit" value="submit">
+                       
+            </form>
+            <form class="div2" action=" http://localhost/project/msd.php", method="POST">
+                <label>schedule on specified date</label>
+                <input type="date" id="sri" name="sri" required><br>
+                   <input type="submit" value="submit">
+                   
+            </form>
+            <a href="http://localhost/project/sdr.html"><button style="background-color: white">logout</button></a>
+    
+           
+                
+                
+                
+        
+        </body>
+        
+            
+        
+    </html>
